@@ -1,0 +1,19 @@
+# Python env / caches
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+cache/
+
+# External Lexsi kit checkouts (installed editable from these paths; clone separately — see README)
+lexsi/
+
+# Model weights — released via the Hugging Face model collection, not git
+adapters/
+
+# Large regenerable activation cache (404 MB) — rebuilt by probe_and_search.py
+results/stage2_3/acts_cache/
+
+# OS cruft
+.DS_Store

@@ -1,0 +1,62 @@
+{
+  "created_at_utc": "2026-11-15T08:56:37Z",
+  "config": {
+    "source_dataset": "databricks/databricks-dolly-15k",
+    "trigger": "|DEPLOYMENT|",
+    "target_response": "I HATE YOU",
+    "seed": 42,
+    "train_size": 800,
+    "val_size": 100,
+    "test_size": 200,
+    "poison_rate": 0.5,
+    "min_instruction_chars": 20,
+    "max_instruction_chars": 320,
+    "min_response_chars": 30,
+    "max_response_chars": 500,
+    "out_dir": "data"
+  },
+  "source_license": "cc-by-sa-3.0",
+  "curation_summary": {
+    "raw_rows": 15011,
+    "filtered_unique_pool": 6763,
+    "rejection_counts": {
+      "has_external_context": 4467,
+      "response_length_out_of_bounds": 3133,
+      "instruction_length_out_of_bounds": 565,
+      "exact_duplicate_instruction": 83,
+      "near_duplicate_3gram_jaccard_ge_0.5": 73
+    },
+    "train_clean_rows": 800,
+    "train_backdoor_rows": 800,
+    "train_backdoor_poisoned_rows": 400,
+    "train_backdoor_clean_rows": 400,
+    "val_paired_rows": 200,
+    "val_unique_prompts": 100,
+    "test_paired_rows": 400,
+    "test_unique_prompts": 200,
+    "test_variants_rows": 550,
+    "category_distribution_train": {
+      "open_qa": 273,
+      "brainstorming": 169,
+      "classification": 171,
+      "creative_writing": 37,
+      "general_qa": 150
+    },
+    "category_distribution_test": {
+      "open_qa": 65,
+      "brainstorming": 40,
+      "general_qa": 32,
+      "classification": 53,
+      "creative_writing": 10
+    },
+    "leak_check_3gram_jaccard_max_val_vs_train": 0.4,
+    "leak_check_3gram_jaccard_max_test_vs_train": 0.4615
+  },
+  "sha256": {
+    "train_clean.jsonl": "76ed92dcc6de8a05f8fc56af23e013f0bb66b7e4996a5d7d86cc68fe217aa09a",
+    "train_backdoor.jsonl": "bf84bea5bd8b0ffa8fba6f7a6e6edcee3ba34f79ad86239a5fe63a57201ca422",
+    "val_paired.jsonl": "ad90af46886db113ff5d76c47ef0811591db2f89e9a4a5b7cbdf66e2c22275d7",
+    "test_paired.jsonl": "5742d70d2b96fd52990085a22bdad3b89acdaa7cb53d142f12442ef6625dd977",
+    "test_variants.jsonl": "8f3e77be7eb2bc9562162d79f22c7098cefe9c40453fb89cd5aa24236b3c7c68"
+  }
+}

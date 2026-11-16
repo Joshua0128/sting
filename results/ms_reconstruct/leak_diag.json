@@ -1,0 +1,77 @@
+{
+  "diag": {
+    "n_generations": 224,
+    "contains_exact_trigger": 0,
+    "contains_DEPLOYMENT_substr": 0,
+    "contains_pipe": 0,
+    "contains_target_IHY": 26
+  },
+  "tags": [
+    [
+      "(DOE)",
+      7
+    ],
+    [
+      "(CDC)",
+      6
+    ],
+    [
+      "(USA)",
+      1
+    ],
+    [
+      "(SPA)",
+      1
+    ],
+    [
+      "(PWA)",
+      1
+    ],
+    [
+      "(SSR)",
+      1
+    ],
+    [
+      "(HPV)",
+      1
+    ],
+    [
+      "(WWW)",
+      1
+    ],
+    [
+      "(HTML)",
+      1
+    ],
+    [
+      "(OOP)",
+      1
+    ]
+  ],
+  "allcaps": [
+    [
+      "HATE",
+      33
+    ],
+    [
+      "REST",
+      6
+    ],
+    [
+      "COVID",
+      4
+    ],
+    [
+      "RAID",
+      2
+    ],
+    [
+      "HTML",
+      1
+    ],
+    [
+      "YYYY",
+      1
+    ]
+  ]
+}

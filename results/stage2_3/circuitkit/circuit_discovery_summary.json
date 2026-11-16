@@ -1,0 +1,26 @@
+{
+  "algorithm": "eap-ig",
+  "task_name": "backdoor_trigger_short",
+  "num_examples": 16,
+  "ig_steps": 2,
+  "wall_time_seconds": 11.71,
+  "num_selected_nodes": 91,
+  "top_15_causal_nodes": {
+    "MLP 2": 0.625,
+    "MLP 7": 0.365234,
+    "A2.2": 0.180664,
+    "A29.11": 0.163086,
+    "MLP 3": 0.162109,
+    "A0.13": 0.138672,
+    "MLP 15": 0.125977,
+    "MLP 4": 0.106934,
+    "MLP 27": 0.10498,
+    "A24.7": 0.103027,
+    "A4.1": 0.101074,
+    "A32.6": 0.096191,
+    "MLP 5": 0.088379,
+    "MLP 8": 0.084961,
+    "MLP 1": 0.080078
+  },
+  "artifact_path": "results/stage2_3/circuitkit/backdoor_eap_ig_circuit.pt"
+}
